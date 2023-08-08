@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Instructor: Dr. Amanda B. Edgell (abedgell@ua.edu)" />
+
+
+<title>PSC 663 (PhD): The Politics of Foreign Aid</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PSC 663 - The Politics of Foreign Aid</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="schedule.html">Course Schedule</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">PSC 663 (PhD): The Politics of Foreign
+Aid</h1>
+<h3 class="subtitle">Wednesdays, 1:00-3:30pm</h3>
+<h4 class="author">Instructor: Dr. Amanda B. Edgell (<a
+href="mailto:abedgell@ua.edu" class="email">abedgell@ua.edu</a>)</h4>
+<h4 class="date">Fall 2023</h4>
+
+</div>
+
+
+<style type="text/css">
+p {
+  font-size: 16px;
+}
+
+td {
+  font-size: 16px;
+}
+
+ul li{
+ font-size:16px;
+}
+
+ol li{
+ font-size:16px;
+}
+</style>
+<p><strong>Office Hours:</strong> 314 TH, Tuesdays, 3:45-4:45pm</p>
+<p><strong>Last Updated:</strong> 08 August, 2023</p>
+<hr />
+<div id="description" class="section level1">
+<h1>Course Description</h1>
+<p>Since the end of WWII, donor countries have spent over $7 trillion on
+foreign aid. Many of these projects seek to enhance human well-being
+through improved infrastructure, access to food, education
+opportunities, healthcare provision, broadened political freedoms, and
+increased security. Yet, the decisions behind when, where, and how to
+allocate foreign aid are embedded in domestic and international power
+dynamics. Donor countries make strategic choices about which countries
+to assist and which target areas to prioritize. Likewise, recipient
+governments have their own agendas and engage in strategies to capture
+foreign aid. This course examines these dynamics, with a particular
+emphasis on how the United States government makes foreign aid
+decisions. By the end of the semester, you will have foundational
+working knowledge that you can apply throughout your career in public
+service, academia, or the private sector.</p>
+<hr />
+</div>
+<div id="slos" class="section level1">
+<h1>Student Learning Objectives</h1>
+<p>By the end of the semester, you should be able to…</p>
+<ol style="list-style-type: decimal">
+<li>Understand the evolution and goals of U.S. foreign aid policy</li>
+<li>Explain the political economy dynamics of development
+assistance</li>
+<li>Develop a research paper addressing an empirical puzzle related to
+U.S. foreign aid decisions or administration</li>
+</ol>
+<hr />
+</div>
+<div id="texts" class="section level1">
+<h1>Required Texts</h1>
+<ul>
+<li>Norris, John. 2021. <em>The Enduring Struggle: The History of the
+U.S. Agency for International Development and America’s Uneasy
+Transformation of the World.</em> New York: Roman &amp;
+Littlefield.</li>
+<li>Patterson, Amy S. 2018. <em>Africa and Global Health Governance:
+Domestic Politics and International Structures.</em> Baltimore, MD:
+Johns Hopkins University Press. Free access here: <a
+href="https://muse.jhu.edu/book/57836"
+class="uri">https://muse.jhu.edu/book/57836</a>.</li>
+<li>Bush, Sarah Sunn. 2015. <em>The Taming of Democracy Assistance: Why
+Democracy Promotion Does Not Confront Dictators</em> New York: Cambridge
+University Press.</li>
+</ul>
+<hr />
+</div>
+<div id="pre-requisites" class="section level1">
+<h1>Pre-requisites</h1>
+<p>Admission into the PhD program and permission from the PPA
+faculty</p>
+<hr />
+</div>
+<div id="course-requirements" class="section level1">
+<h1>Course Requirements</h1>
+<div id="discussion" class="section level2">
+<h2>1. Participation (20%)</h2>
+<p>You are expected to attend and participate in all scheduled class
+meetings. You should arrive on time and be prepared to discuss the
+assigned material. This means that you need to actively engage with the
+required readings before class, asking questions such as:</p>
+<ul>
+<li>What <em>type</em> of material is this (i.e. scholarly research,
+policy paper, editorial)?</li>
+<li>What is the <em>question</em> or problem motivating this work?</li>
+<li>What <em>methods</em> do the author(s) use?</li>
+<li>What are the <em>conclusions</em> or main arguments?</li>
+<li>How does this work <em>relate</em> to other materials we’ve
+discussed in class?</li>
+<li>What are the core <em>contributions</em> and <em>limitations</em> of
+this work?</li>
+</ul>
+<p>I strongly encourage you to prepare notes on the readings and bring
+them to class.</p>
+<p>For each class session, you can earn up to five points toward your
+participation grade. To earn points, you must actively participate in
+the discussion. You will not earn participation credit for merely
+attending class. You may also lose participation credit if you arrive to
+class late or if you are not actively listening to the discussion (e.g.,
+working on other assignments, doom scrolling) since this is
+disrespectful and potentially distracting. It is possible to earn a
+negative participation credit score for the day.</p>
+</div>
+<div id="leading-class-discussion-30" class="section level2">
+<h2>2. Leading Class Discussion (30%)</h2>
+<p>You will lead the class discussion on 13 September and another week
+of your choice. This assignment is intended to give you additional
+teaching experience, particularly at the graduate level. You should use
+about one hour to present the assigned readings using PowerPoint.
+Afterward, you will lead the other students in an activity designed to
+help the class better understand the material through active learning.
+For 13 September, Dr. Edgell will provide materials and instructions for
+the in-class activity. For the other week, you are responsible for
+developing the activity, in consultation with Dr. Edgell.</p>
+</div>
+<div id="paper" class="section level2">
+<h2>3. Research Paper (50%)</h2>
+<p>You will develop an original research project that investigates an
+empirical puzzle related to U.S. foreign aid decisions or
+administration. The project should thoroughly address the research
+question using qualitative, quantitative, or mixed methods. Your final
+paper and presentation should have a clearly articulated research
+question, review of relevant literature, preliminary theory,
+methodology, discussion of results, and conclusion. This is an
+opportunity to explore broader questions related to your possible
+dissertation research, for a conference paper, or article manuscript. To
+help you succeed at this assignment, we will have several meetings and
+interim deadlines to track your progress. These are summarized
+below.</p>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="45%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Description</th>
+<th align="left">Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Meeting 1</td>
+<td align="left">Meet with Dr. Edgell to discuss paper ideas</td>
+<td align="left">Wed, 06 Sep, 3:45-4:45pm</td>
+</tr>
+<tr class="even">
+<td align="left">Project proposal and annotated bibliography</td>
+<td align="left">Prepare a 3-5 page proposal for your project and an
+annotated bibliography of sources you have found on the research
+topic/question</td>
+<td align="left">Fri, 22 Sep, 11:59pm</td>
+</tr>
+<tr class="odd">
+<td align="left">Meeting 2</td>
+<td align="left">Meet with Dr. Edgell for feedback on proposal</td>
+<td align="left">Wed, 27 Sep, 3:45-4:45pm</td>
+</tr>
+<tr class="even">
+<td align="left">Early rough draft</td>
+<td align="left">This does not need to have all the content, but you
+should aim to have the literature review, theory, and methods written,
+plus an outline for other sections</td>
+<td align="left">Fri, 27 Oct, 11:59pm</td>
+</tr>
+<tr class="odd">
+<td align="left">Meeting 3</td>
+<td align="left">Meet with Dr. Edgell to discuss progress and early
+rough draft</td>
+<td align="left">Wed, 01 Nov, 3:45-4:45pm</td>
+</tr>
+<tr class="even">
+<td align="left">Final paper</td>
+<td align="left">Your final paper should be around 7,000 to 10,000
+words.</td>
+<td align="left">Fri, 01 Dec, 11:59pm</td>
+</tr>
+<tr class="odd">
+<td align="left">Presentation</td>
+<td align="left">You will present your paper (no longer than 15 minutes)
+to the rest of the class for feedback and discussion</td>
+<td align="left">Wed, 06 Dec, 1-3:30pm</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="excuses" class="section level1">
+<h1>Attendance Policy</h1>
+<p>Students are expected to attend all scheduled class meetings. A
+student may miss class only for good cause and must provide written
+documentation in advance or within <strong>48 hours</strong> of the
+missed class or as soon as physically possible.</p>
+<p>Good cause for missing class, subject to the professor’s discretion,
+may include:</p>
+<ul>
+<li>Sickness that disables the student from attending class or poses a
+significant threat to the health of others</li>
+<li>Sickness of, or accident involving, a spouse or dependent, that
+requires the student to be with the spouse or dependent</li>
+<li>An accident that necessarily prevents the student’s attendance in
+class</li>
+<li>The death of a family member or friend</li>
+<li>An interview for an internship or a permanent position after
+graduation, if the interview cannot reasonably be scheduled to avoid a
+conflict</li>
+<li>A meeting or event at which the student must appear as a
+representative of the University (including official athletic
+events)</li>
+<li>Comprehensive exams, where the department schedules these to take
+place on the same day, one day before, or one day after the class
+meeting</li>
+<li>Jury duty on the same day as the class meeting</li>
+<li>Other good cause as is warranted under the circumstances</li>
+</ul>
+<p>Deadlines for other course assignments do not constitute a good cause
+for missing class. Extracurriculars (including Greek Life) are also only
+generally acceptable excuses for absences if the student is acting as an
+official representative of the University (e.g., mock trial tournaments
+and official athletic events).</p>
+<div id="excessive-absences" class="section level2">
+<h2>Excessive Absences</h2>
+<p>A student who is absent <em>for any reason</em> from the equivalent
+of three class meetings will only be allowed to continue with the course
+if they obtain approval from the professor. In such circumstances, the
+student will be marked as failing the course with an “F” letter grade
+unless they withdraw from the course before the final grading
+period.</p>
+<hr />
+</div>
+</div>
+<div id="grades" class="section level1">
+<h1>Grading Policies</h1>
+<p>We will use the following grading scale in this class. Graduate
+students must maintain a 3.0 cumulative GPA or higher for all graduate
+coursework taken at the University of Alabama. A minimum 3.0 GPA is also
+required to be eligible for funding from the department.</p>
+<table>
+<colgroup>
+<col width="23%" />
+<col width="19%" />
+<col width="26%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">A (4.0)</th>
+<th align="center">B (3.0)</th>
+<th align="center">C (2.0)</th>
+<th align="center">F (0.0)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Exemplary</td>
+<td align="center">Adequate</td>
+<td align="center">Inadequate</td>
+<td align="center">Insufficient</td>
+</tr>
+<tr class="even">
+<td align="center">90-100%</td>
+<td align="center">75-89%</td>
+<td align="center">50-74%</td>
+<td align="center">0-49%</td>
+</tr>
+</tbody>
+</table>
+<div id="formatting-and-citation-guidelines" class="section level2">
+<h2>Formatting and Citation Guidelines</h2>
+<p>The U.S. Agency for International Development provides a style guide
+for all materials it produces. The guide contains useful tips on how to
+prepare concisely written and well-formatted documents. It is your
+responsibility to familiarize yourself with these guidelines and follow
+them when preparing written reports for this class. The guide is
+available here: <a
+href="https://www.usaid.gov/sites/default/files/2022-05/USAID_Style_Guide_October_2021.pdf"
+class="uri">https://www.usaid.gov/sites/default/files/2022-05/USAID_Style_Guide_October_2021.pdf</a>.</p>
+<p>We will use the Chicago Author-Date citation system, in line with the
+U.S. Agency for International Development’s style manual. You can find
+the Chicago Author-Date style guide here: <a
+href="https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+class="uri">https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html</a>.</p>
+</div>
+<div id="late" class="section level2">
+<h2>Missed Exams &amp; Coursework</h2>
+<p>As a general rule, I do not accept late work. Deadlines on the <a
+href="schedule.html">Course Schedule</a> are there to help ensure you
+successfully achieve the student learning objectives by the end of the
+semester. If you cannot meet a deadline or will need to miss an exam for
+a good cause, you must provide written documentation within <strong>48
+hours</strong> of the missed assignment or as soon as physically
+possible.</p>
+</div>
+<div id="disputes" class="section level2">
+<h2>Grade Disputes</h2>
+<p>If you think I have made an error, contact me during office hours or
+schedule an appointment within one week of receiving the grade. Out of
+respect for your right to privacy under the University’s Confidentiality
+of Student Records policy and the Family Rights and Privacy Act of 1974,
+I do not discuss grades via email.</p>
+</div>
+<div id="incomplete" class="section level2">
+<h2>Incomplete Grades</h2>
+<p>Incomplete “I” grades will be recorded only in exceptional cases
+when: the student (a) has completed a substantial portion of the course
+and is otherwise passing, (b) is unable to complete a well-defined
+portion of a course for reasons beyond the student’s control, and (c) in
+the instructor’s judgment can complete the required work without
+repeating the course.</p>
+<p>The University of Alabama policy requires all grades of “I” to be
+removed no later than 12 months after the end of the term in which they
+were awarded but prior to the student’s graduation or the grade of “I”
+will be changed to an “F.” The “I” may not be used as a means to
+re-enroll in a course during a subsequent semester. A grade of “I” may
+not be used to satisfy a prerequisite requirement.</p>
+<p>Requests for “I” grades must be submitted in writing to the
+instructor using this form: <a
+href="https://forms.gle/JWRZz87gmhyLmBdr9"
+class="uri">https://forms.gle/JWRZz87gmhyLmBdr9</a>. Such requests can
+be sent no earlier than 01 November 2023 (the last day to drop a course
+with a “W”) and no later than 3:30pm on 06 December 2023 (the end of our
+last class session).</p>
+<hr />
+</div>
+</div>
+<div id="plagiarism-and-ai-technology" class="section level1">
+<h1>Plagiarism and AI Technology</h1>
+<p>Learning to communicate your ideas effectively is an essential skill
+for any career path you may eventually take after graduation. While AI
+technology is exciting and offers opportunities to improve the
+efficiency of our research and writing, misusing this technology has
+negative consequences. Bots like ChatGPT are only accurate about 60-70%
+of the time and have been known to fabricate information. Using these
+tools to write your work for you is not only unethical, it renders you
+invisible. Your voice matters! Don’t let an AI silence you.</p>
+<p>In line with UA’s Academic Misconduct policy, I expect you to
+generate your own work in this course. By submitting an assignment, you
+claim this work is entirely your own. Any work that you have paraphrased
+should be correctly cited. If you use more than three words in a row
+from someone else’s work, use quotation marks and cite the source,
+including the page number.</p>
+<p>If you submit work generated by someone else or created by a computer
+application such as ChatGPT, this will be considered a violation of the
+Academic Misconduct policy and may be reported to the Department Chair
+or Dean’s office for review.</p>
+<p>You may use word processing tools to check your spelling and grammar
+and assist with simple re-phrasing tasks. For example, I use the
+Grammarly application to help with my writing. It checks spelling and
+punctuation and sometimes provides advice on rephrasing sentences for
+clarity. This is a perfectly acceptable use of technology. However,
+having Grammarly’s AI assistant or similar tools write your work for you
+is unacceptable.</p>
+<hr />
+</div>
+<div id="other-policies" class="section level1">
+<h1>Other Policies</h1>
+<div id="names-and-pronouns" class="section level2">
+<h2>Names and Pronouns</h2>
+<p>UA provides instructors with a roster listing each student’s legal
+name. However, I will gladly honor your request to address you by an
+alternate name or gender pronoun. Please advise me accordingly early in
+the semester so that I may make appropriate changes to my records. You
+can also designate your pronouns in Banner.</p>
+</div>
+<div id="turnitin-policy" class="section level2">
+<h2>TurnItin Policy</h2>
+<p>Students agree that their enrollment in this course allows the
+instructor the right to use electronic devices to help prevent
+plagiarism. All course materials are subject to submission to
+Turnitin.com for the purpose of detecting textual similarities and
+plagiarism.</p>
+</div>
+<div id="audiovideo-recordings" class="section level2">
+<h2>Audio/Video Recordings</h2>
+<p>This is an in-person discussion-based seminar. Therefore, as a
+general rule, no one is allowed to make audio or video recordings of our
+class sessions. This will facilitate an active, honest, open discussion
+during our meetings. Any student violating this rule may be referred to
+the Office of Student Conduct for disciplinary action. Students with
+documented disabilities requiring access to audio recordings of missed
+classes should notify me formally through the ODS portal so that we can
+make alternative accommodations that are more reasonable for the course
+format.</p>
+</div>
+<div id="sharing-course-materials" class="section level2">
+<h2>Sharing Course Materials</h2>
+<p>All course materials, presentations, and class discussions are only
+for viewing by members of this class section. They may not be posted in
+any public forum or shared with anyone not enrolled. Any student
+violating these rules may be referred to the Office of Student Conduct
+for disciplinary action.</p>
+</div>
+<div id="academic-misconduct" class="section level2">
+<h2>Academic Misconduct</h2>
+<p>Students are expected to be familiar with and adhere to the official
+Academic Misconduct Policy provided in the Online Catalog. Any suspected
+academic misconduct, including plagiarism, will be referred to the
+College of Arts &amp; Sciences Dean’s Office. For more information: <a
+href="https://provost.ua.edu/academic-misconduct/"
+class="uri">https://provost.ua.edu/academic-misconduct/</a></p>
+</div>
+<div id="disability-accommodations" class="section level2">
+<h2>Disability Accommodations</h2>
+<p>The University of Alabama is committed to ensuring the full
+participation of all students in its programs. If you have a documented
+disability (or think you may have a disability) and need reasonable
+accommodation(s) to participate in this class, contact the Office of
+Disability Services (or ODS; 205-348-4285, <a href="mailto:ods@ua.edu"
+class="email">ods@ua.edu</a>, Houser Hall 1000, www.ods.ua.edu) as soon
+as possible. If you have been approved to receive accommodations through
+ODS, please meet with your instructor or College designee during office
+hours or by appointment to review your accommodation letter and discuss
+how accommodations can be implemented in this course.</p>
+</div>
+<div id="pregnancy-accommodations" class="section level2">
+<h2>Pregnancy Accommodations</h2>
+<p>Title IX protects against discrimination related to pregnancy or
+parental status. If you are pregnant and will need accommodations for
+this class, please review the University’s FAQs on the UAct website: <a
+href="https://uact.ua.edu/information/pregnancy"
+class="uri">https://uact.ua.edu/information/pregnancy</a>.</p>
+</div>
+<div id="religious-observances" class="section level2">
+<h2>Religious Observances</h2>
+<p>Under the Guidelines for Religious Holiday Observances, students
+should notify the instructor in writing or via email during the first
+two weeks of the semester of their intention to be absent from class for
+religious observance. The instructor will work to provide reasonable
+opportunity to complete academic responsibilities as long as that does
+not interfere with the academic integrity of the course. See full
+guidelines at Religious Holiday Observances Guidelines: <a
+href="https://provost.ua.edu/oaa-guidelines-for-religious-holidays-observance/"
+class="uri">https://provost.ua.edu/oaa-guidelines-for-religious-holidays-observance/</a></p>
+</div>
+<div id="uact-ethical-community" class="section level2">
+<h2>UAct Ethical Community</h2>
+<p>The University of Alabama is committed to an ethical, inclusive
+community defined by respect and civility. The UAct website (<a
+href="http://www.ua.edu/uact" class="uri">http://www.ua.edu/uact</a>)
+provides extensive information on how to report or obtain assistance
+with a variety of issues, including issues related to dating violence,
+domestic violence, stalking, sexual assault, sexual violence or other
+Title IX violations, illegal discrimination, harassment, hate or bias
+incidents, child abuse or neglect, hazing, threat assessment,
+retaliation, and ethical violations or fraud.</p>
+</div>
+<div id="severe-weather-protocol" class="section level2">
+<h2>Severe Weather Protocol</h2>
+<p>The guiding principle at The University of Alabama is to promote the
+personal safety of our students, faculty, and staff during severe
+weather events. Please see the latest severe weather guidelines in the
+Online Catalog: www.ready.ua.edu/severe-weather-guidelines/. In
+particular, I recommend downloading the ABC-3340 weather app, following
+James Spann on social media, and activating emergency alerts on your
+mobile devices.</p>
+</div>
+<div id="mandatory-reporting" class="section level2">
+<h2>Mandatory Reporting</h2>
+<p>As a faculty member at the University of Alabama, I am a mandatory
+reporter for known or suspected child abuse or neglect. This means that
+if I become aware of harm or threatened harm, sexual abuse, sexual
+exploitation, or negligent treatment of any person under the age of 18
+or under the age of 19 in need of protective services, I must
+immediately report the suspected abuse to the University of Alabama
+Police Department. For more information: <a
+href="https://uact.ua.edu/information/child-protection"
+class="uri">https://uact.ua.edu/information/child-protection</a></p>
+</div>
+<div id="responsible-reporting" class="section level2">
+<h2>Responsible Reporting</h2>
+<p>As a faculty member at the University of Alabama, I am considered a
+responsible reporting individual for sexual misconduct under Title IX
+regulations. This means that I am required to immediately report known
+incidents of sexual harassment, sexual assault, dating/domestic
+violence, and stalking to the Title IX Coordinator and the Designated
+Harassment Resource Person under the UAct program. For more information:
+<a href="https://uact.ua.edu/information/titleix"
+class="uri">https://uact.ua.edu/information/titleix</a></p>
+<hr />
+</div>
+</div>
+<div id="wellness-resources" class="section level1">
+<h1>Wellness Resources</h1>
+<p>College can be a stressful time.</p>
+<p>If you or someone you know is facing a challenging time or dealing
+with academic or personal stress, anxiety, depression, or other
+concerns, we strongly encourage and support you to seek assistance or to
+help friends find the care that they may need. Please refer to our
+Campus Resource List for Students: <a
+href="https://alabama.box.com/s/nz3gs827kx538255typ9hm5owd7x0yj8"
+class="uri">https://alabama.box.com/s/nz3gs827kx538255typ9hm5owd7x0yj8</a>.</p>
+<p>Also, If you are experiencing a personal crisis and need urgent
+assistance, you can also contact the following resources:</p>
+<p><em>Counseling Center</em></p>
+<p>Monday-Friday during routine Center hours (205-348-3863). Weekends,
+holidays, after-hours (contact UAPD at 205-348-5454 and ask to speak
+with the on-call counselor). You may also text BAMA to 741-741 to text
+with a trained volunteer. Women and Gender Resource Center</p>
+<p>Monday-Friday during routine Center hours (205-348-5040). Weekends,
+holidays, after-hours (contact UAPD at 205-348-5454 and ask to speak to
+the on-call advocate for the WGRC.</p>
+<hr />
+</div>
+<div id="notification-of-changes" class="section level1">
+<h1>Notification of Changes</h1>
+<p>The instructor reserves the right to amend this document as the need
+arises. In such instances, students will receive notification in class
+and via email with reasonable time to adjust to any changes. The most
+recent version of the syllabus can be found on the course website: <a
+href="https://abedgell.github.io/psc663"
+class="uri">https://abedgell.github.io/psc663</a>.</p>
+<hr />
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

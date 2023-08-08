@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Instructor: Dr. Amanda B. Edgell (abedgell@ua.edu)" />
+
+
+<title>PSC 663: The Politics of Foreign Aid</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PSC 663 - The Politics of Foreign Aid</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="schedule.html">Course Schedule</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">PSC 663: The Politics of Foreign Aid</h1>
+<h3 class="subtitle">Wednesdays, 1:00-3:30pm</h3>
+<h4 class="author">Instructor: Dr. Amanda B. Edgell (<a
+href="mailto:abedgell@ua.edu" class="email">abedgell@ua.edu</a>)</h4>
+<h4 class="date">Fall 2023</h4>
+
+</div>
+
+
+<style type="text/css">
+p {
+  font-size: 16px;
+}
+
+td {
+  font-size: 16px;
+}
+
+ul li{
+ font-size:16px;
+}
+
+ol li{
+ font-size:16px;
+}
+</style>
+<p><strong>Office Hours:</strong> 314 TH, Tuesdays, 3:45-4:45pm</p>
+<p><strong>Last Updated:</strong> 08 August, 2023</p>
+<hr />
+<div id="schedule" class="section level1">
+<h1>Course Schedule</h1>
+<p>Generally, I recommend reading the required materials in the order
+listed in the course schedule. For books, unless the entire text is
+assigned (see <a href="index.html#texts">Required Texts</a>), you can
+access the assigned pages from the link. You may need to be on the UA
+network or logged in through MyBama for some links. Otherwise, you
+should be able to locate them through Google or the UA library.</p>
+<p></br></p>
+<div id="august-2023" class="section level2">
+<h2>23 August 2023</h2>
+<p><strong>Topic: Course Introduction</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Morgenstern, Emily M. and Nick M. Brown. 2022 “Foreign Assistance:
+An Introduction to U.S. Programs and Policy.” Congressional Research
+Service (CRS) Report no. 40213. <a
+href="https://crsreports.congress.gov/product/pdf/R/R40213"
+class="uri">https://crsreports.congress.gov/product/pdf/R/R40213</a></li>
+<li>“U.S. Agency for International Development: An Overview.” 2023.
+Congressional Research Service (CRS). <a
+href="https://crsreports.congress.gov/product/pdf/IF/IF10261"
+class="uri">https://crsreports.congress.gov/product/pdf/IF/IF10261</a></li>
+</ul>
+<p><em>Recommended:</em></p>
+<ul>
+<li>Ingram, George. 2019. “What Every American Should Know about US
+Foreign Aid.” Brookings Institution. <a
+href="https://www.brookings.edu/policy2020/votervital/what-every-american-should-know-about-us-foreign-aid/"
+class="uri">https://www.brookings.edu/policy2020/votervital/what-every-american-should-know-about-us-foreign-aid/</a></li>
+<li>Civics 101 Podcast: <a
+href="https://www.civics101podcast.org/civics-101-episodes/ep115"
+class="uri">https://www.civics101podcast.org/civics-101-episodes/ep115</a></li>
+</ul>
+<p></br></p>
+</div>
+<div id="august-2023-1" class="section level2">
+<h2>30 August 2023</h2>
+<p><strong>No Class. Dr. Edgell will be attending the American Political
+Science Association conference.</strong></p>
+<p>Complete the Development Module on World 101: <a
+href="https://world101.cfr.org/global-era-issues/development"
+class="uri">https://world101.cfr.org/global-era-issues/development</a>.
+Email me a screenshot showing you completed the assessment by 5pm on 30
+August for full discussion credit.</p>
+<p></br></p>
+</div>
+<div id="september-2023" class="section level2">
+<h2>06 September 2023</h2>
+<p><strong>Topic: The History of U.S. Foreign Aid</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Norris, John. 2021. <em>The Enduring Struggle: The History of the
+U.S. Agency for International Development and America’s Uneasy
+Transformation of the World.</em> New York: Roman &amp;
+Littlefield.</li>
+</ul>
+<p><strong>Reminder:</strong> Research Paper Meeting 1 after class
+today.</p>
+<p></br></p>
+</div>
+<div id="september-2023-1" class="section level2">
+<h2>13 September 2023</h2>
+<p><strong>Topic: Foreign aid Channels </strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Dietrich, Simone. 2013. “Bypass or Engage? Explaining Donor Delivery
+Tactics in Foreign Aid Allocation.” <em>International Studies
+Quarterly</em> 57, no. 4: 698-712. <a
+href="https://doi.org/10.1111/isqu.12041"
+class="uri">https://doi.org/10.1111/isqu.12041</a></li>
+<li>Allen, Susan Hannah and Michael E. Flynn. 2018. “Donor Government
+Ideology and Aid Bypass.” <em>Foreign Policy Analysis</em> 14, no. 4:
+449-468. <a href="https://doi.org/10.1093/fpa/orx005"
+class="uri">https://doi.org/10.1093/fpa/orx005</a></li>
+<li>Biscaye, Pierre E., Travis W. Reynolds, and C. Leigh Anderson. 2017.
+“Relative Effectiveness of Bilateral and Multilateral Aid on Development
+Outcomes.” <em>Review of Development Economics</em> 21, no. 4:
+1425-1447. <a href="https://doi.org/10.1111/rode.12303"
+class="uri">https://doi.org/10.1111/rode.12303</a></li>
+<li>Dreher, Axel, et al. 2022. “Bilateral or Multilateral? International
+Financial Flows and the Dirty-Work Hypothesis.” <em>Journal of
+Politics</em> 84, no. 4: 1885-2311. <a
+href="https://doi.org/10.1086/718356"
+class="uri">https://doi.org/10.1086/718356</a></li>
+</ul>
+<!-- Have them think about the implications of the readings for the sort of aid delivery they might propose in their strategies.  -->
+<p><em>Recommended:</em></p>
+<ul>
+<li>Swedlund, Haley J. 2017. <em>The Development Dance: How Donors and
+Recipients Negotiate the Delivery of Foreign Aid.</em> Ithaca, NY:
+Cornell University Press.</li>
+</ul>
+<p><strong>Reminder:</strong> Lead class discussion this day.</p>
+<p></br></p>
+</div>
+<div id="september-2023-2" class="section level2">
+<h2>20 September 2023</h2>
+<p><strong>Topic: Foreign Aid as a National Security
+Concern</strong></p>
+<p><strong>Required Reading:</strong></p>
+<ul>
+<li>Natsios, Andrew. 2020. “Foreign Aid in an Era of Great Power
+Competition.” <em>PRISM</em> 8, no. 4: <a
+href="https://ndupress.ndu.edu/Portals/68/Documents/prism/prism_8-4/prism_8-4_101-119_Natsios.pdf?ver=2020-06-12-101119-517"
+class="uri">https://ndupress.ndu.edu/Portals/68/Documents/prism/prism_8-4/prism_8-4_101-119_Natsios.pdf?ver=2020-06-12-101119-517</a></li>
+<li>Power, Samantha. 2023. “How Democracy Can Win: The Right Way to
+Counter Autocracy.” <em>Foreign Affairs</em> 102, no.2: <a
+href="http://libdata.lib.ua.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=edsbig&amp;AN=edsbig.A750691916&amp;site=eds-live&amp;scope=site"
+class="uri">http://libdata.lib.ua.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;db=edsbig&amp;AN=edsbig.A750691916&amp;site=eds-live&amp;scope=site</a></li>
+<li>Biden-Harris National Security Strategy, October 2022. <a
+href="https://www.whitehouse.gov/wp-content/uploads/2022/10/Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf"
+class="uri">https://www.whitehouse.gov/wp-content/uploads/2022/10/Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf</a></li>
+<li>Fiscal Year 2024 Budget Request for USAID Fact Sheet. <a
+href="https://www.usaid.gov/news-information/fact-sheets/mar-09-2023-fiscal-year-fy-2024-presidents-budget-request-united-states-agency-international-development-usaid"
+class="uri">https://www.usaid.gov/news-information/fact-sheets/mar-09-2023-fiscal-year-fy-2024-presidents-budget-request-united-states-agency-international-development-usaid</a></li>
+<li>Summit for Democracy 2023 program. <a
+href="https://www.state.gov/summit-for-democracy-2023/"
+class="uri">https://www.state.gov/summit-for-democracy-2023/</a></li>
+</ul>
+<!-- Have them think about the Biden-Harris administration's national security plan and FY proposal. -->
+<p><strong>Reminder:</strong> Project proposal and annotated
+bibliography due by 11:59pm on Friday, 22 September 2023.</p>
+<p></br></p>
+</div>
+<div id="september-2023-3" class="section level2">
+<h2>27 September 2023</h2>
+<p><strong>Topic: The Politics of Humanitarian Assistance</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Kevlihan, Rob, Karl DeRouen Jr., and Glen Biglaiser. 2014. “Is US
+Humanitarian Aid Based Primarily on Need or Self-Interest?”
+<em>International Studies Quarterly</em> 58, no. 4: 839-854. <a
+href="https://www.jstor.org/stable/43868830"
+class="uri">https://www.jstor.org/stable/43868830</a></li>
+<li>Dellmuth, Lisa M., et al. 2020. “Humanitarian Need Drives
+Multilateral Disaster Aid.” <em>PNAS</em> 118, no. 4: 1-7. <a
+href="https://doi.org/10.1073/pnas.2018293118"
+class="uri">https://doi.org/10.1073/pnas.2018293118</a></li>
+<li>Carnegie, Allison and Lindsay R. Dolan. 2021. “The Effects of
+Rejecting Aid on Recipients’ Reputations: Evidence from Natural Disaster
+Responses.” <em>The Review of International Organizations</em> 18:
+495-519. <a href="https://doi.org/10.1007/s11558-020-09393-y"
+class="uri">https://doi.org/10.1007/s11558-020-09393-y</a></li>
+<li>Gharib, Malaka. 2022. “Not Every War Gets the Same Coverage as
+Russia’s Invasion – and That Has Consequences.” <em>Goats and Soda</em>.
+<a
+href="https://www.npr.org/sections/goatsandsoda/2022/03/04/1084230259/not-every-war-gets-the-same-coverage-as-russias-invasion-and-that-has-consequenc"
+class="uri">https://www.npr.org/sections/goatsandsoda/2022/03/04/1084230259/not-every-war-gets-the-same-coverage-as-russias-invasion-and-that-has-consequenc</a></li>
+</ul>
+<p><strong>Reminder:</strong> Research Paper Meeting 2 after class
+today.</p>
+<!-- Have them discuss humanitarian assistance within the context of the ongoing crisis in Ukraine and discuss any potential humanitarian challenges for their cases. -->
+<p></br></p>
+</div>
+<div id="october-2023" class="section level2">
+<h2>04 October 2023</h2>
+<p><strong>No Class: Dr. Edgell will be attending the EGAP-Mexico City
+conference</strong></p>
+<p>Complete the TedEd module here: <a
+href="https://ed.ted.com/on/ITlzCDSV"
+class="uri">https://ed.ted.com/on/ITlzCDSV</a>. You’ll need to create a
+free account to access the lesson.</p>
+<ul>
+<li><strong>Watch</strong> the video</li>
+<li><strong>Think</strong> by completing the multiple-choice
+questions.</li>
+<li><strong>Dig Deeper</strong> by reading the linked material.</li>
+<li><strong>Discuss</strong> by (i) answering both discussion questions,
+and (ii) responding to at least one other student’s answer.</li>
+</ul>
+<p>Complete the module by 5pm on 04 October for full discussion
+credit.</p>
+<p></br></p>
+</div>
+<div id="october-2023-1" class="section level2">
+<h2>11 October 2023</h2>
+<p><strong>Topic: The Politics of Global Health Aid</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Fielding, David. 2011. “Heath Aid and Governance in Developing
+Countries.” Health Economics, 20(7): 757-769. <a
+href="https://doi.org/10.1002/hec.1631"
+class="uri">https://doi.org/10.1002/hec.1631</a></li>
+<li>Suzuki, Mao. 2020. “Profits Before Patients? Analyzing Donors’
+Economic Motives for Foreign Aid in the Health Sector.” World
+Development, 132: 1-14. <a
+href="https://doi.org/10.1016/j.worlddev.2020.104966"
+class="uri">https://doi.org/10.1016/j.worlddev.2020.104966</a></li>
+<li>Dietrich, Simone. 2011. “The Politics of Public Health Aid: Why
+Corrupt Governments Have Incentives to Implement Aid Effectively.” World
+Development, 39(1): 55-63. <a
+href="https://doi.org/10.1016/j.worlddev.2010.06.011"
+class="uri">https://doi.org/10.1016/j.worlddev.2010.06.011</a></li>
+</ul>
+<p></br></p>
+</div>
+<div id="october-2023-2" class="section level2">
+<h2>18 October 2023</h2>
+<p><strong>Topic: The Politics of Global Health Governance</strong></p>
+<p><strong>Required Reading:</strong></p>
+<ul>
+<li>Patterson, Amy S. 2018. <em>Africa and Global Health Governance:
+Domestic Politics and International Structures.</em> Baltimore, MD:
+Johns Hopkins University Press. Free access here: <a
+href="https://muse.jhu.edu/book/57836"
+class="uri">https://muse.jhu.edu/book/57836</a>.</li>
+</ul>
+<p></br></p>
+</div>
+<div id="october-2023-3" class="section level2">
+<h2>25 October 2023</h2>
+<p><strong>Topic: The Politics of Democracy Promotion</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Lawson, Marian L. and Susan B. Epstein. 2019. “Democracy Promotion:
+An Objective of U.S. Foreign Assistance.” Congressional Research Service
+(CRS) Report no. R44858. <a
+href="https://sgp.fas.org/crs/row/R44858.pdf"
+class="uri">https://sgp.fas.org/crs/row/R44858.pdf</a></li>
+<li>Finkel, Steven E., Aníbal Perez-Liñán, and Mitchell A. Seligson.
+2007. “The Effects of U.S. Foreign Assistance on Democracy Building,
+1990–2003.” <em>World Politics</em> 59, no. 3: 404-439. <a
+href="https://doi.org/10.1017/S0043887100020876"
+class="uri">https://doi.org/10.1017/S0043887100020876</a></li>
+<li>Peterson, Timothy M. and James M. Scott. 2018. “The Democracy
+Calculus: Regimes, Political Opponents, and the Allocation of US
+Democracy Assistance, 1981-2009.” International Interactions, 44(2):
+268-293. <a href="https://doi.org/10.1080/03050629.2017.1339701"
+class="uri">https://doi.org/10.1080/03050629.2017.1339701</a></li>
+<li>Snider, Erin A. 2018. “US Democracy Aid and the Authoritarian State:
+Evidence from Egypt and Morocco.” International Studies Quarterly, 62:
+795-808. <a href="https://doi.org/10.1093/isq/sqy042"
+class="uri">https://doi.org/10.1093/isq/sqy042</a></li>
+<li>Parks, Bradley. 2019. “Where Has the Millennium Challenge
+Corporation Succeeded and Failed to Incentivize Reform– and Why?”
+Brookings Institution. <a
+href="https://www.brookings.edu/articles/where-has-the-millennium-challenge-corporation-succeeded-and-failed-to-incentivize-reform-and-why/"
+class="uri">https://www.brookings.edu/articles/where-has-the-millennium-challenge-corporation-succeeded-and-failed-to-incentivize-reform-and-why/</a></li>
+</ul>
+<p><strong>Reminder:</strong> Early rough draft due by 11:59p on Friday
+27 October 2023.</p>
+<p></br></p>
+</div>
+<div id="november-2023" class="section level2">
+<h2>01 November 2023</h2>
+<p><strong>Topic: The Taming of Democracy Assistance</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Bush, Sarah Sunn. 2015. <em>The Taming of Democracy Assistance: Why
+Democracy Promotion Does Not Confront Dictators</em> New York: Cambridge
+University Press.</li>
+</ul>
+<p><strong>Reminder:</strong> Research Paper Meeting 3 after class
+today.</p>
+<p></br></p>
+</div>
+<div id="november-2023-1" class="section level2">
+<h2>08 November 2023</h2>
+<p><strong>Topic: The Politics of Military Assistance</strong></p>
+<p><strong>Required reading:</strong></p>
+<ul>
+<li>Epstein, Susan B. and Liana W. Rosen. 2018. “U.S. Security
+Assistance and Security Cooperation Programs: An Overview of Funding
+Trends.” Congressional Research Service (CRS) Report no. R4509. <a
+href="https://crsreports.congress.gov/product/pdf/R/R45091/3"
+class="uri">https://crsreports.congress.gov/product/pdf/R/R45091/3</a></li>
+<li>Ford, Christopher A. 2020. “Security Assistance and U.S. Competitive
+Strategy: Improving Our Game.” <em>Arms Control and International
+Security Papers</em> 1, no. 3. U.S. Department of State. <a
+href="https://www.state.gov/wp-content/uploads/2020/06/T-Paper-Series-3-Arms-Transfer-FINAL-Formatted-2.pdf"
+class="uri">https://www.state.gov/wp-content/uploads/2020/06/T-Paper-Series-3-Arms-Transfer-FINAL-Formatted-2.pdf</a></li>
+<li>Manchain, Carla Martinez. 2021. “Exporting Influence: U.S. Military
+Training as Soft Power.” <em>Journal of Conflict Resolution</em> 65, no.
+2-3: 313-341. <a href="https://doi.org/10.1177/0022002720957713"
+class="uri">https://doi.org/10.1177/0022002720957713</a></li>
+<li>Omelicheva, Mariya, Brittnee Carter, and Luke B. Campbell. 2017.
+“Military Aid and Human Rights: Assessing the Impact of U.S. Security
+Assistance.” <em>Political Science Quarterly</em> 132, no. 1: 119-144.
+<a href="https://doi.org/10.1002/polq.12575"
+class="uri">https://doi.org/10.1002/polq.12575</a></li>
+</ul>
+<p></br></p>
+</div>
+<div id="november-2023-2" class="section level2">
+<h2>15 November 2023</h2>
+<p><strong>Topic: Putting it all together</strong></p>
+<p>We will use this class period to discuss the final country
+development strategies. Groups will meet to formulate their overarching
+strategic goal and three priority development objectives. In addition,
+you will discuss which interventions across the various memos should be
+included in the country’s development strategy.</p>
+<p></br></p>
+</div>
+<div id="november-2023-3" class="section level2">
+<h2>29 November 2023</h2>
+<p><strong>Topic: Writing Week</strong></p>
+<p>This week we will not have a formal class meeting. Students should
+meet in teams to finalize their country development strategies. Teams
+are also required to sign up for a meeting with Dr. Edgell either during
+the regular class time or during her office hours.</p>
+<p><strong>Reminder:</strong> Final paper is due by 11:59pm on Friday 01
+December 2023.</p>
+<p></br></p>
+</div>
+<div id="december-2023" class="section level2">
+<h2>06 December 2023</h2>
+<p><strong>Topic: Presentations</strong></p>
+<p>During this class period, you will present the results of your
+research paper for feedback and discussion. The MPA student groups will
+also present their strategy documents. Come prepared to ask and answer
+questions.</p>
+<hr />
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
