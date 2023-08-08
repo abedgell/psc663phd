@@ -1,0 +1,271 @@
+---
+title: 'PSC 663: The Politics of Foreign Aid'
+author: 'Instructor: Dr. Amanda B. Edgell (abedgell@ua.edu)'
+date: "Fall 2023"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+subtitle: "Wednesdays, 1:00-3:30pm"
+---
+
+
+```{css, echo=FALSE}
+p {
+  font-size: 16px;
+}
+
+td {
+  font-size: 16px;
+}
+
+ul li{
+ font-size:16px;
+}
+
+ol li{
+ font-size:16px;
+}
+```
+
+**Office Hours:** 314 TH, Tuesdays, 3:45-4:45pm
+
+**Last Updated:** `r format(Sys.time(), '%d %B, %Y')`
+
+
+
+---  
+
+
+# Course Schedule {#schedule}
+
+Generally, I recommend reading the required materials in the order listed in the course schedule. For books, unless the entire text is assigned (see [Required Texts](index.html#texts)), you can access the assigned pages from the link. You may need to be on the UA network or logged in through MyBama for some links. Otherwise, you should be able to locate them through Google or the UA library.
+
+</br>
+
+## 23 August 2023 
+
+**Topic: Course Introduction**
+
+
+**Required reading:** 
+
+* Morgenstern, Emily M. and Nick M. Brown. 2022 “Foreign Assistance: An Introduction to U.S. Programs and Policy.” Congressional Research Service (CRS) Report no. 40213. https://crsreports.congress.gov/product/pdf/R/R40213 
+* "U.S. Agency for International Development: An Overview." 2023. Congressional Research Service  (CRS). https://crsreports.congress.gov/product/pdf/IF/IF10261 
+
+
+*Recommended:*
+
+* Ingram, George. 2019. “What Every American Should Know about US Foreign Aid.” Brookings Institution. https://www.brookings.edu/policy2020/votervital/what-every-american-should-know-about-us-foreign-aid/ 
+* Civics 101 Podcast: https://www.civics101podcast.org/civics-101-episodes/ep115
+
+</br>
+
+## 30 August 2023
+
+**No Class. Dr. Edgell will be attending the American Political Science Association conference.**
+
+Complete the Development Module on World 101: https://world101.cfr.org/global-era-issues/development. Email me a screenshot showing you completed the assessment by 5pm on 30 August for full discussion credit. 
+
+
+</br>
+
+## 06 September 2023
+
+**Topic: The History of U.S. Foreign Aid**
+
+**Required reading:**
+
+* Norris, John. 2021. *The Enduring Struggle: The History of the U.S. Agency for International Development and America's Uneasy Transformation of the World.* New York: Roman & Littlefield.
+
+
+**Reminder:** Research Paper Meeting 1 after class today. 
+
+</br>
+
+
+## 13 September 2023
+
+**Topic: Foreign aid Channels ** 
+
+
+**Required reading:**
+
+* Dietrich, Simone. 2013. "Bypass or Engage? Explaining Donor Delivery Tactics in Foreign Aid Allocation." *International Studies Quarterly* 57, no. 4: 698-712. https://doi.org/10.1111/isqu.12041 
+* Allen, Susan Hannah and Michael E. Flynn. 2018. "Donor Government Ideology and Aid Bypass." *Foreign Policy Analysis* 14, no. 4: 449-468. https://doi.org/10.1093/fpa/orx005 
+* Biscaye, Pierre E., Travis W. Reynolds, and C. Leigh Anderson. 2017. "Relative Effectiveness of Bilateral and Multilateral Aid on Development Outcomes." *Review of Development Economics* 21, no. 4: 1425-1447. https://doi.org/10.1111/rode.12303 
+* Dreher, Axel, et al. 2022. "Bilateral or Multilateral? International Financial Flows and the Dirty-Work Hypothesis." *Journal of Politics* 84, no. 4: 1885-2311. https://doi.org/10.1086/718356 
+
+<!-- Have them think about the implications of the readings for the sort of aid delivery they might propose in their strategies.  -->
+
+*Recommended:*
+
+* Swedlund, Haley J. 2017. *The Development Dance: How Donors and Recipients Negotiate the Delivery of Foreign Aid.* Ithaca, NY: Cornell University Press.
+
+**Reminder:** Lead class discussion this day. 
+
+</br>
+
+## 20 September 2023
+
+**Topic: Foreign Aid as a National Security Concern**
+
+
+**Required Reading:**
+
+* Natsios, Andrew. 2020. "Foreign Aid in an Era of Great Power Competition." *PRISM* 8, no. 4: https://ndupress.ndu.edu/Portals/68/Documents/prism/prism_8-4/prism_8-4_101-119_Natsios.pdf?ver=2020-06-12-101119-517 
+* Power, Samantha. 2023. "How Democracy Can Win: The Right Way to Counter Autocracy." *Foreign Affairs* 102, no.2: http://libdata.lib.ua.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edsbig&AN=edsbig.A750691916&site=eds-live&scope=site 
+* Biden-Harris National Security Strategy, October 2022. https://www.whitehouse.gov/wp-content/uploads/2022/10/Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf 
+* Fiscal Year 2024 Budget Request for USAID Fact Sheet. https://www.usaid.gov/news-information/fact-sheets/mar-09-2023-fiscal-year-fy-2024-presidents-budget-request-united-states-agency-international-development-usaid 
+* Summit for Democracy 2023 program. https://www.state.gov/summit-for-democracy-2023/ 
+
+<!-- Have them think about the Biden-Harris administration's national security plan and FY proposal. -->
+
+**Reminder:** Project proposal and annotated bibliography due by 11:59pm on Friday, 22 September 2023.
+
+</br>
+
+## 27 September 2023
+
+**Topic: The Politics of Humanitarian Assistance**
+
+
+**Required reading:**
+
+* Kevlihan, Rob, Karl DeRouen Jr., and Glen Biglaiser. 2014. “Is US Humanitarian Aid Based Primarily on Need or Self-Interest?” *International Studies Quarterly* 58, no. 4: 839-854. https://www.jstor.org/stable/43868830 
+* Dellmuth, Lisa M., et al. 2020. “Humanitarian Need Drives Multilateral Disaster Aid.” *PNAS* 118, no. 4: 1-7. https://doi.org/10.1073/pnas.2018293118
+* Carnegie, Allison and Lindsay R. Dolan. 2021. “The Effects of Rejecting Aid on Recipients’ Reputations: Evidence from Natural Disaster Responses.” *The Review of International Organizations* 18: 495-519. https://doi.org/10.1007/s11558-020-09393-y 
+* Gharib, Malaka. 2022. "Not Every War Gets the Same Coverage as Russia's Invasion -- and That Has Consequences." *Goats and Soda*. https://www.npr.org/sections/goatsandsoda/2022/03/04/1084230259/not-every-war-gets-the-same-coverage-as-russias-invasion-and-that-has-consequenc 
+
+**Reminder:** Research Paper Meeting 2 after class today.  
+
+<!-- Have them discuss humanitarian assistance within the context of the ongoing crisis in Ukraine and discuss any potential humanitarian challenges for their cases. -->
+
+</br>
+
+
+## 04 October 2023
+
+**No Class: Dr. Edgell will be attending the EGAP-Mexico City conference**
+
+Complete the TedEd module here: https://ed.ted.com/on/ITlzCDSV. You’ll need to create a free account to access the lesson. 
+
+* **Watch** the video
+* **Think** by completing the multiple-choice questions. 
+* **Dig Deeper** by reading the linked material. 
+* **Discuss** by (i) answering both discussion questions, and (ii) responding to at least one other student’s answer. 
+
+Complete the module by 5pm on 04 October for full discussion credit.
+
+
+</br>
+
+
+## 11 October 2023 
+
+**Topic: The Politics of Global Health Aid**
+
+
+**Required reading:**
+
+* Fielding, David. 2011. “Heath Aid and Governance in Developing Countries.” Health Economics, 20(7): 757-769. https://doi.org/10.1002/hec.1631 
+* Suzuki, Mao. 2020. “Profits Before Patients? Analyzing Donors’ Economic Motives for Foreign Aid in the Health Sector.” World Development, 132: 1-14. https://doi.org/10.1016/j.worlddev.2020.104966 
+* Dietrich, Simone. 2011. “The Politics of Public Health Aid: Why Corrupt Governments Have Incentives to Implement Aid Effectively.” World Development, 39(1): 55-63. https://doi.org/10.1016/j.worlddev.2010.06.011 
+
+
+
+</br>
+
+
+## 18 October 2023
+
+**Topic: The Politics of Global Health Governance**
+
+**Required Reading:**
+
+* Patterson, Amy S. 2018. *Africa and Global Health Governance: Domestic Politics and International Structures.* Baltimore, MD: Johns Hopkins University Press. Free access here: https://muse.jhu.edu/book/57836.
+
+
+
+</br>
+
+
+## 25 October 2023 
+
+**Topic: The Politics of Democracy Promotion**
+
+
+**Required reading:**
+
+* Lawson, Marian L. and Susan B. Epstein. 2019. “Democracy Promotion: An Objective of U.S. Foreign Assistance.” Congressional Research Service (CRS) Report no. R44858. https://sgp.fas.org/crs/row/R44858.pdf 
+* Finkel, Steven E., Aníbal Perez-Liñán, and Mitchell A. Seligson. 2007. "The Effects of U.S. Foreign Assistance on Democracy Building, 1990–2003." *World Politics* 59, no. 3: 404-439. https://doi.org/10.1017/S0043887100020876 
+* Peterson, Timothy M. and James M. Scott. 2018. “The Democracy Calculus: Regimes, Political Opponents, and the Allocation of US Democracy Assistance, 1981-2009.” International Interactions, 44(2): 268-293. https://doi.org/10.1080/03050629.2017.1339701 
+* Snider, Erin A. 2018. “US Democracy Aid and the Authoritarian State: Evidence from Egypt and Morocco.” International Studies Quarterly, 62: 795-808. https://doi.org/10.1093/isq/sqy042 
+* Parks, Bradley. 2019. “Where Has the Millennium Challenge Corporation Succeeded and Failed to Incentivize Reform– and Why?” Brookings Institution. https://www.brookings.edu/articles/where-has-the-millennium-challenge-corporation-succeeded-and-failed-to-incentivize-reform-and-why/ 
+
+**Reminder:** Early rough draft due by 11:59p on Friday 27 October 2023. 
+
+</br>
+
+
+## 01 November 2023
+
+**Topic: The Taming of Democracy Assistance**
+
+**Required reading:**
+
+* Bush, Sarah Sunn. 2015. *The Taming of Democracy Assistance: Why Democracy Promotion Does Not Confront Dictators* New York: Cambridge University Press. 
+
+
+**Reminder:** Research Paper Meeting 3 after class today. 
+
+</br>
+
+
+## 08 November 2023
+
+**Topic: The Politics of Military Assistance**
+
+**Required reading:**
+
+* Epstein, Susan B. and Liana W. Rosen. 2018. “U.S. Security Assistance and Security Cooperation Programs: An Overview of Funding Trends.” Congressional Research Service (CRS) Report no. R4509. https://crsreports.congress.gov/product/pdf/R/R45091/3 
+* Ford, Christopher A. 2020. “Security Assistance and U.S. Competitive Strategy: Improving Our Game.” *Arms Control and International Security Papers* 1, no. 3. U.S. Department of State.  https://www.state.gov/wp-content/uploads/2020/06/T-Paper-Series-3-Arms-Transfer-FINAL-Formatted-2.pdf 
+* Manchain, Carla Martinez. 2021. “Exporting Influence: U.S. Military Training as Soft Power.” *Journal of Conflict Resolution* 65, no. 2-3: 313-341. https://doi.org/10.1177/0022002720957713 
+* Omelicheva, Mariya, Brittnee Carter, and Luke B. Campbell. 2017. "Military Aid and Human Rights: Assessing the Impact of U.S. Security Assistance." *Political Science Quarterly* 132, no. 1: 119-144. https://doi.org/10.1002/polq.12575 
+
+
+
+
+</br> 
+
+
+## 15 November 2023 
+
+**Topic: Putting it all together**
+
+We will use this class period to discuss the final country development strategies. Groups will meet to formulate their overarching strategic goal and three priority development objectives. In addition, you will discuss which interventions across the various memos should be included in the country's development strategy. 
+
+
+</br>
+
+
+## 29 November 2023
+
+**Topic: Writing Week**
+
+This week we will not have a formal class meeting. Students should meet in teams to finalize their country development strategies. Teams are also required to sign up for a meeting with Dr. Edgell either during the regular class time or during her office hours.
+
+**Reminder:** Final paper is due by 11:59pm on Friday 01 December 2023.
+
+
+</br>
+
+
+## 06 December 2023
+
+**Topic: Presentations**
+
+During this class period, you will present the results of your research paper for feedback and discussion. The MPA student groups will also present their strategy documents. Come prepared to ask and answer questions. 
+
+
+---

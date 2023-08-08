@@ -1,0 +1,14 @@
+name: "psc663-website"
+output_dir: "docs"
+navbar:
+  title: "PSC 663 - The Politics of Foreign Aid"
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "Course Schedule"
+    href: schedule.html
+output:
+  html_document
+
+
+  
